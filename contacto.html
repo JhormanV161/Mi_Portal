@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de perfumes y fragancias. Catálogo, atención y contacto.">
+    <meta name="keywords" content="perfumeria, fragancias, lociones, emprendimiento">
+    <meta name="author" content="Jhorman Vallejo">
+    <meta property="og:title" content="NEXURY | El lujo de ser inolvidables">
+    <meta property="og:description" content="Emprendimiento de perfumes y fragancias.">
+    <title>NEXURY | Contactanos</title>
+    <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">NEXURY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="informacion.html">Información</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tabla.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="py-5">
+            <div class="container">
+                <article>
+                    <h1>Contáctanos</h1>
+                    <p>Déjanos tus datos y te escribimos.</p>
+                </article>
+
+                <form id="form-contacto" novalidate>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <p id="error-nombre" class="text-danger"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <p id="error-email" class="text-danger"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">WhatsApp / celular</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono">
+                        <p id="error-telefono" class="text-danger"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <select class="form-select" id="asunto" name="asunto">
+                            <option value="">Selecciona una opción</option>
+                            <option value="pedido">Pedido</option>
+                            <option value="asesoria">Asesoría</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <p id="error-asunto" class="text-danger"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                        <p id="error-mensaje" class="text-danger"></p>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="checkbox" id="acepto" name="acepto">
+                        <label for="acepto">Acepto ser contactado</label>
+                        <p id="error-acepto" class="text-danger"></p>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                    <p id="exito" class="text-success"></p>
+                </form>
+            </div>
+        </section>
+
+        <aside class="py-3">
+            <div class="container">
+                <p>También puedes escribirnos por WhatsApp para pedidos y asesoría.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="py-3">
+        <div class="container">
+            <p>NEXURY | El lujo de ser inolvidables</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
